@@ -1,0 +1,129 @@
+{
+  "id": "TEMPLATE-lead-generation",
+  "name": "[TEMPLATE] Lead Generation Campaign",
+  "campaignType": "lead-generation",
+  "status": "draft",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Traders and developers turn market news, macro events, and trading data into backtestable trading intelligence.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "algo-quants",
+      "secondary": "fintech-builders"
+    },
+    "goal": "lead-generation",
+    "positioning": "Replace — value prop for signup/demo",
+    "message": "Replace — single CTA-focused message",
+    "contentPillars": [
+      "product-education",
+      "trading-education",
+      "case-studies",
+      "founder-building-in-public"
+    ],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "proof", "conversion"]
+  },
+  "kpis": {
+    "primary": "signup-conversions",
+    "targets": {
+      "linkClicks": 800,
+      "landingPageVisits": 600,
+      "crmLeads": 75
+    },
+    "measurement": "UTM-tagged links; Twenty CRM leads with source=campaign-id",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "lg-01",
+      "audience": "algo-quants",
+      "goal": "lead-generation",
+      "pillar": "product-education",
+      "format": "api-feature-card",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "awareness",
+      "cta": "learn-more",
+      "canvaTemplate": "api-feature-card",
+      "scheduledDay": "monday"
+    },
+    {
+      "rowId": "lg-02",
+      "audience": "retail-traders",
+      "goal": "lead-generation",
+      "pillar": "trading-education",
+      "format": "carousel",
+      "platforms": ["facebook"],
+      "funnelStage": "education",
+      "cta": "read-guide",
+      "canvaTemplate": "carousel",
+      "scheduledDay": "tuesday"
+    },
+    {
+      "rowId": "lg-03",
+      "audience": "prop-firm-traders",
+      "goal": "lead-generation",
+      "pillar": "case-studies",
+      "format": "case-study",
+      "platforms": ["facebook"],
+      "funnelStage": "proof",
+      "cta": "see-backtest",
+      "canvaTemplate": "case-study",
+      "scheduledDay": "wednesday"
+    },
+    {
+      "rowId": "lg-04",
+      "audience": "fintech-builders",
+      "goal": "lead-generation",
+      "pillar": "product-education",
+      "format": "chart-insight",
+      "platforms": ["x"],
+      "funnelStage": "conversion",
+      "cta": "sign-up",
+      "canvaTemplate": "chart-insight",
+      "scheduledDay": "thursday"
+    },
+    {
+      "rowId": "lg-05",
+      "audience": "investors-partners",
+      "goal": "lead-generation",
+      "pillar": "founder-building-in-public",
+      "format": "quote-card",
+      "platforms": ["x"],
+      "funnelStage": "conversion",
+      "cta": "book-demo",
+      "canvaTemplate": "quote-card",
+      "scheduledDay": "friday"
+    }
+  ],
+  "canva": {
+    "templates": ["api-feature-card", "carousel", "case-study", "chart-insight", "quote-card"],
+    "workflowDoc": "packages/twenty-docker/quantgist/CANVA_MULTIMEDIA_WORKFLOW.md"
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "designer": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "Plan — offer, landing page, UTM scheme",
+    "tuesday": "Education assets + carousel",
+    "wednesday": "Case study proof post",
+    "thursday": "Conversion posts scheduled as drafts",
+    "friday": "Lead count vs KPI; CRM sync"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday"
+}

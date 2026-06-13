@@ -1,0 +1,60 @@
+{
+  "description": "Event promotion template — set dates relative to event datetime.",
+  "posts": [
+    {
+      "id": "ev-01-announce",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "ev-01",
+        "audience": "retail-traders",
+        "goal": "event-promotion",
+        "pillar": "market-intelligence",
+        "format": "event-banner",
+        "funnelStage": "awareness",
+        "cta": "register"
+      },
+      "media": {
+        "canvaTemplate": "event-banner",
+        "canvaDesignId": "PLACEHOLDER"
+      },
+      "x": {
+        "content": "[REPLACE] Event announce — title, date, one-line value.\n\nRegister → EVENT_URL\n\n#QuantGist"
+      },
+      "facebook": {
+        "content": "[REPLACE] Full event description with register CTA."
+      }
+    },
+    {
+      "id": "ev-02-education",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "ev-02",
+        "audience": "algo-quants",
+        "goal": "event-promotion",
+        "pillar": "product-education",
+        "format": "api-feature-card",
+        "funnelStage": "education",
+        "cta": "add-calendar"
+      },
+      "x": {
+        "content": "[REPLACE] What you'll learn — agenda bullets.\n\nAdd to calendar → CALENDAR_URL"
+      }
+    },
+    {
+      "id": "ev-05-live",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "ev-05",
+        "audience": "all",
+        "goal": "event-promotion",
+        "pillar": "trading-education",
+        "format": "carousel",
+        "funnelStage": "conversion",
+        "cta": "join-live"
+      },
+      "facebook": {
+        "content": "[REPLACE] We are live — join now → STREAM_URL"
+      }
+    }
+  ]
+}

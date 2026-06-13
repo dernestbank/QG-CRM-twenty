@@ -1,0 +1,8 @@
+name = "quantgist-postiz-crm-webhook"
+main = "postiz-publish-webhook.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+QUANTGIST_API_URL = "https://api.quantgist.com/v1"
+
+# Set via: wrangler secret put CRM_LEAD_INGEST_SECRET

@@ -1,0 +1,107 @@
+{
+  "id": "jun-2026-brand-awareness",
+  "name": "QuantGist Brand Awareness — June 2026",
+  "campaignType": "brand-awareness",
+  "status": "draft",
+  "startDate": "2026-06-16",
+  "endDate": "2026-06-26",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Algorithmic traders, system builders, and trade automation developers use QuantGist to turn macro events into structured inputs for trading bots and execution logic.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "algo-quants",
+      "secondary": "fintech-builders"
+    },
+    "goal": "brand-awareness",
+    "positioning": "QuantGist is macro event infrastructure for trading bots, systematic strategies, and automated trading workflows.",
+    "message": "Build trading bots on structured macro event data instead of scraping headlines and hand-labeling calendars.",
+    "contentPillars": [
+      "market-intelligence",
+      "trading-education",
+      "founder-building-in-public",
+      "community-content"
+    ],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "proof", "retention"]
+  },
+  "kpis": {
+    "primary": "impressions",
+    "targets": {
+      "impressions": 80000,
+      "profileVisits": 1500,
+      "followerGrowth": 150
+    },
+    "measurement": "Postiz platform analytics; follower delta vs campaign start",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "ba-01",
+      "audience": "algo-quants",
+      "goal": "brand-awareness",
+      "pillar": "market-intelligence",
+      "format": "chart-insight",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "awareness",
+      "cta": "follow",
+      "canvaTemplate": "chart-insight",
+      "scheduledDay": "monday"
+    },
+    {
+      "rowId": "ba-02",
+      "audience": "fintech-builders",
+      "goal": "brand-awareness",
+      "pillar": "trading-education",
+      "format": "carousel",
+      "platforms": ["facebook"],
+      "funnelStage": "education",
+      "cta": "save-post",
+      "canvaTemplate": "carousel",
+      "scheduledDay": "wednesday"
+    },
+    {
+      "rowId": "ba-03",
+      "audience": "algo-quants",
+      "goal": "brand-awareness",
+      "pillar": "founder-building-in-public",
+      "format": "quote-card",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "proof",
+      "cta": "read-thesis",
+      "canvaTemplate": "quote-card",
+      "scheduledDay": "friday"
+    }
+  ],
+  "canva": {
+    "templates": ["chart-insight", "carousel", "quote-card", "brand-awareness"],
+    "workflowDoc": "packages/twenty-docker/quantgist/CANVA_MULTIMEDIA_WORKFLOW.md"
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "designer": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "Bot-builder hook — structured macro data use case",
+    "tuesday": "API workflow carousel + Canva styling",
+    "wednesday": "Founder quote card for systematic traders",
+    "thursday": "Developer community engagement + draft review",
+    "friday": "Automation-focused brand graphic + impressions review"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday"
+}

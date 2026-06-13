@@ -1,0 +1,77 @@
+{
+  "description": "Brand awareness — June 2026. Draft for biweekly Postiz review.",
+  "posts": [
+    {
+      "id": "ba-jun-w1-chart",
+      "scheduledAt": "2026-06-16T15:00:00.000Z",
+      "tags": ["brand", "chart-insight"],
+      "matrix": {
+        "rowId": "ba-01",
+        "audience": "algo-quants",
+        "goal": "brand-awareness",
+        "pillar": "market-intelligence",
+        "format": "chart-insight",
+        "funnelStage": "awareness",
+        "cta": "follow"
+      },
+      "media": {
+        "canvaTemplate": "chart-insight",
+        "canvaDesignId": "DAHMV-97HPA"
+      },
+      "x": {
+        "content": "Your trading bot should not be parsing headlines by hand.\n\nQuantGist turns macro events, revisions, and surprise scores into structured API inputs for systematic strategies.\n\nBuild on data your models can actually consume → https://quantgist.com?utm_source=x&utm_campaign=jun-2026-brand-awareness\n\n#QuantGist #AlgoTrading #TradingAPI"
+      },
+      "facebook": {
+        "content": "If you're building trading bots, macro data has to be structured before it becomes useful.\n\nQuantGist gives algorithmic and system traders API-ready event data, surprise scoring, and sentiment context so automation logic can react to more than a headline.\n\nExplore the API at https://quantgist.com?utm_source=facebook&utm_campaign=jun-2026-brand-awareness (informational only — not financial advice).\n\n#QuantGist #AlgoTrading #TradingBots"
+      }
+    },
+    {
+      "id": "ba-jun-w2-carousel",
+      "scheduledAt": "2026-06-20T14:00:00.000Z",
+      "tags": ["brand", "education", "carousel"],
+      "matrix": {
+        "rowId": "ba-02",
+        "audience": "fintech-builders",
+        "goal": "brand-awareness",
+        "pillar": "trading-education",
+        "format": "carousel",
+        "funnelStage": "education",
+        "cta": "save-post"
+      },
+      "media": {
+        "canvaTemplate": "carousel",
+        "canvaDesignId": "DAHMV43brNM"
+      },
+      "x": {
+        "content": "3 steps to wire macro events into a trading system:\n\n1. Pull structured event data via API\n2. Score the surprise and sentiment shift\n3. Feed it into bot logic or backtests\n\nQuantGist handles steps 1-2 so your automation can focus on execution.\n\nSee the API workflow: https://quantgist.com?utm_source=x&utm_campaign=jun-2026-brand-awareness\n\n#QuantGist #AlgoTrading #TradingBots"
+      },
+      "facebook": {
+        "content": "Save this workflow for bot builders and system traders:\n\n1. Pull structured macro events\n2. Convert the release into usable features\n3. Test how your automation responds across historical analogs\n\nQuantGist is built for trading APIs, automated strategies, and research pipelines.\n\nNot financial advice. Learn more at https://quantgist.com?utm_source=facebook&utm_campaign=jun-2026-brand-awareness"
+      }
+    },
+    {
+      "id": "ba-jun-w3-quote",
+      "scheduledAt": "2026-06-26T16:00:00.000Z",
+      "tags": ["brand", "founder"],
+      "matrix": {
+        "rowId": "ba-03",
+        "audience": "algo-quants",
+        "goal": "brand-awareness",
+        "pillar": "founder-building-in-public",
+        "format": "quote-card",
+        "funnelStage": "proof",
+        "cta": "read-thesis"
+      },
+      "media": {
+        "canvaTemplate": "quote-card",
+        "canvaDesignId": "DAHMVzXQgPs"
+      },
+      "x": {
+        "content": "\"We built QuantGist for algorithmic traders and bot builders who need macro data their systems can actually use, not another opinion feed.\"\n\n— Ernest, QuantGist\n\nBuild with us: https://quantgist.com?utm_source=x&utm_campaign=jun-2026-brand-awareness\n\n#BuildInPublic #QuantGist #AlgoTrading"
+      },
+      "facebook": {
+        "content": "Building in public: QuantGist exists to turn macro news into structured infrastructure for trading bots, systematic strategies, and automation teams.\n\nWe're not selling vague commentary. We're shipping APIs and tooling that developers can wire into real workflows.\n\nFollow the build at https://quantgist.com?utm_source=facebook&utm_campaign=jun-2026-brand-awareness"
+      }
+    }
+  ]
+}

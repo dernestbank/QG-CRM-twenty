@@ -1,0 +1,96 @@
+{
+  "id": "jun-2026-event-promotion",
+  "name": "QuantGist Live Demo — June 2026",
+  "campaignType": "event-promotion",
+  "status": "draft",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Traders and developers turn market news, macro events, and trading data into backtestable trading intelligence.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "retail-traders",
+      "secondary": "algo-quants"
+    },
+    "goal": "event-promotion",
+    "positioning": "Live walkthrough: Market Signals from macro headline to backtest context.",
+    "message": "Join our June live demo — see how QuantGist turns CPI/FOMC into structured research.",
+    "contentPillars": [
+      "market-intelligence",
+      "product-education",
+      "community-content"
+    ],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "conversion", "retention"]
+  },
+  "kpis": {
+    "primary": "event-registrations",
+    "targets": {
+      "registrations": 100,
+      "calendarAdds": 50,
+      "liveAttendance": 40
+    },
+    "measurement": "Registration URL clicks from Postiz + event platform",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "ev-01",
+      "audience": "retail-traders",
+      "goal": "event-promotion",
+      "pillar": "market-intelligence",
+      "format": "event-banner",
+      "funnelStage": "awareness",
+      "cta": "register",
+      "canvaTemplate": "event-banner"
+    },
+    {
+      "rowId": "ev-02",
+      "audience": "algo-quants",
+      "goal": "event-promotion",
+      "pillar": "product-education",
+      "format": "market-news-alert",
+      "funnelStage": "education",
+      "cta": "save-date",
+      "canvaTemplate": "market-news-alert"
+    },
+    {
+      "rowId": "ev-03",
+      "audience": "retail-traders",
+      "goal": "event-promotion",
+      "pillar": "community-content",
+      "format": "event-banner",
+      "funnelStage": "conversion",
+      "cta": "register-now",
+      "canvaTemplate": "event-banner"
+    }
+  ],
+  "canva": {
+    "templates": ["event-banner", "market-news-alert"]
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "Save-the-date banner",
+    "tuesday": "Speaker/agenda confirmation",
+    "wednesday": "Agenda teaser — macro workflow",
+    "thursday": "Reminder email + social sync",
+    "friday": "Last-chance registration push"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday"
+}

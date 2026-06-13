@@ -1,0 +1,108 @@
+{
+  "id": "qg-signals-launch-jun-2026",
+  "name": "QuantGist Market Signals Launch",
+  "campaignType": "product-launch",
+  "status": "draft",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "excludedReason": "LinkedIn Page blocked until Community Management API approved. Personal LinkedIn skipped for brand campaigns.",
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Traders and developers turn market news, macro events, and trading data into backtestable trading intelligence.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "retail-traders",
+      "secondary": "algo-quants"
+    },
+    "goal": "product-launch",
+    "positioning": "Market Signals turns macro news and sentiment into actionable, backtestable context — not noise.",
+    "message": "Introducing QuantGist Market Signals: clarity on what moved markets and why it matters for your watchlist.",
+    "contentPillars": [
+      "market-intelligence",
+      "product-education",
+      "founder-building-in-public",
+      "community-content"
+    ],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "retention"]
+  },
+  "kpis": {
+    "primary": "feature-page-visits",
+    "targets": {
+      "impressions": 25000,
+      "linkClicks": 300,
+      "conversions": 30
+    },
+    "measurement": "Postiz analytics + Twenty CRM Note with campaign id qg-signals-launch-jun-2026",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "pl-01",
+      "audience": "retail-traders",
+      "goal": "product-launch",
+      "pillar": "market-intelligence",
+      "format": "market-news-alert",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "awareness",
+      "cta": "learn-more",
+      "canvaTemplate": "market-news-alert",
+      "scheduledDay": "monday"
+    },
+    {
+      "rowId": "pl-02",
+      "audience": "algo-quants",
+      "goal": "product-launch",
+      "pillar": "product-education",
+      "format": "thread",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "education",
+      "cta": "explore-feature",
+      "canvaTemplate": null,
+      "scheduledDay": "wednesday"
+    },
+    {
+      "rowId": "pl-06",
+      "audience": "retail-traders",
+      "goal": "community",
+      "pillar": "community-content",
+      "format": "poll",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "retention",
+      "cta": "reply-feedback",
+      "canvaTemplate": null,
+      "scheduledDay": "friday"
+    }
+  ],
+  "canva": {
+    "templates": ["market-news-alert"],
+    "workflowDoc": "packages/twenty-docker/quantgist/CANVA_MULTIMEDIA_WORKFLOW.md",
+    "note": "Text-first example; add Canva exports when credentials configured"
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "designer": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "Launch announce (pl-01) — awareness",
+    "tuesday": "Canva market-news-alert if Canva ready",
+    "wednesday": "How it works thread (pl-02) — education",
+    "thursday": "Schedule Postiz drafts",
+    "friday": "Build-in-public feedback (pl-06) — retention"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday — user reviews scheduled queue in Postiz calendar",
+  "crmCampaignNote": "Log campaign in Twenty as Opportunity or Note with source=postiz-campaign and campaign id"
+}

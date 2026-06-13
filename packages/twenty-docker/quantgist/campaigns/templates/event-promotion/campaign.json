@@ -1,0 +1,129 @@
+{
+  "id": "TEMPLATE-event-promotion",
+  "name": "[TEMPLATE] Event Promotion Campaign",
+  "campaignType": "event-promotion",
+  "status": "draft",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Traders and developers turn market news, macro events, and trading data into backtestable trading intelligence.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "retail-traders",
+      "secondary": "algo-quants"
+    },
+    "goal": "event-promotion",
+    "positioning": "Replace — event title and why attend",
+    "message": "Replace — date, time, format (webinar/AMA/live)",
+    "contentPillars": [
+      "market-intelligence",
+      "product-education",
+      "founder-building-in-public",
+      "community-content"
+    ],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "conversion", "retention"]
+  },
+  "kpis": {
+    "primary": "event-registrations",
+    "targets": {
+      "registrations": 150,
+      "calendarAdds": 80,
+      "liveAttendance": 60
+    },
+    "measurement": "Event platform analytics + registration URL clicks from Postiz",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "ev-01",
+      "audience": "retail-traders",
+      "goal": "event-promotion",
+      "pillar": "market-intelligence",
+      "format": "event-banner",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "awareness",
+      "cta": "register",
+      "canvaTemplate": "event-banner",
+      "scheduledDay": "monday"
+    },
+    {
+      "rowId": "ev-02",
+      "audience": "algo-quants",
+      "goal": "event-promotion",
+      "pillar": "product-education",
+      "format": "api-feature-card",
+      "platforms": ["x"],
+      "funnelStage": "education",
+      "cta": "add-calendar",
+      "canvaTemplate": "api-feature-card",
+      "scheduledDay": "tuesday"
+    },
+    {
+      "rowId": "ev-03",
+      "audience": "fintech-builders",
+      "goal": "event-promotion",
+      "pillar": "founder-building-in-public",
+      "format": "quote-card",
+      "platforms": ["x"],
+      "funnelStage": "proof",
+      "cta": "share-event",
+      "canvaTemplate": "quote-card",
+      "scheduledDay": "wednesday"
+    },
+    {
+      "rowId": "ev-04",
+      "audience": "retail-traders",
+      "goal": "event-promotion",
+      "pillar": "community-content",
+      "format": "poll",
+      "platforms": ["facebook"],
+      "funnelStage": "retention",
+      "cta": "ask-question",
+      "canvaTemplate": null,
+      "scheduledDay": "thursday"
+    },
+    {
+      "rowId": "ev-05",
+      "audience": "all",
+      "goal": "event-promotion",
+      "pillar": "trading-education",
+      "format": "carousel",
+      "platforms": ["facebook"],
+      "funnelStage": "conversion",
+      "cta": "join-live",
+      "canvaTemplate": "carousel",
+      "scheduledDay": "event-day"
+    }
+  ],
+  "canva": {
+    "templates": ["event-banner", "api-feature-card", "quote-card", "carousel"],
+    "workflowDoc": "packages/twenty-docker/quantgist/CANVA_MULTIMEDIA_WORKFLOW.md"
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "designer": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "Plan — event details, registration URL, banner",
+    "tuesday": "Agenda carousel + speaker quote",
+    "wednesday": "Reminder posts + calendar CTA",
+    "thursday": "Schedule drafts; community Q poll",
+    "friday": "Day-before push; live-day join-live post"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday"
+}

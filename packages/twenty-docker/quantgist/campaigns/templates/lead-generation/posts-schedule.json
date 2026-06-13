@@ -1,0 +1,40 @@
+{
+  "description": "Lead generation template — use UTM params on all links.",
+  "posts": [
+    {
+      "id": "lg-01-awareness",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "lg-01",
+        "audience": "algo-quants",
+        "goal": "lead-generation",
+        "pillar": "product-education",
+        "format": "api-feature-card",
+        "funnelStage": "awareness",
+        "cta": "learn-more"
+      },
+      "x": {
+        "content": "[REPLACE] API/value hook.\n\nLearn more → quantgist.com?utm_source=x&utm_campaign=CAMPAIGN_ID\n\n#QuantGist"
+      },
+      "facebook": {
+        "content": "[REPLACE] Expanded value prop with learn-more CTA and UTM link."
+      }
+    },
+    {
+      "id": "lg-04-conversion",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "lg-04",
+        "audience": "fintech-builders",
+        "goal": "lead-generation",
+        "pillar": "product-education",
+        "format": "chart-insight",
+        "funnelStage": "conversion",
+        "cta": "sign-up"
+      },
+      "x": {
+        "content": "[REPLACE] Conversion post with clear signup CTA.\n\nGet started → quantgist.com/signup?utm_source=x&utm_campaign=CAMPAIGN_ID"
+      }
+    }
+  ]
+}

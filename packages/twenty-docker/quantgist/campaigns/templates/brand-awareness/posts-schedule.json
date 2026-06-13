@@ -1,0 +1,56 @@
+{
+  "description": "Brand awareness template — replace dates and copy.",
+  "posts": [
+    {
+      "id": "ba-01-awareness",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "ba-01",
+        "audience": "retail-traders",
+        "goal": "brand-awareness",
+        "pillar": "market-intelligence",
+        "format": "chart-insight",
+        "funnelStage": "awareness",
+        "cta": "follow"
+      },
+      "x": {
+        "content": "[REPLACE] Chart insight hook — what the market is pricing in.\n\nFollow @quantgist for daily context.\n\n#QuantGist #Markets"
+      }
+    },
+    {
+      "id": "ba-02-education",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "ba-02",
+        "audience": "prop-firm-traders",
+        "goal": "brand-awareness",
+        "pillar": "trading-education",
+        "format": "carousel",
+        "funnelStage": "education",
+        "cta": "save-post"
+      },
+      "facebook": {
+        "content": "[REPLACE] Carousel summary — 3 tips for reading macro catalysts. Save for later."
+      }
+    },
+    {
+      "id": "ba-03-proof",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "matrix": {
+        "rowId": "ba-03",
+        "audience": "investors-partners",
+        "goal": "brand-awareness",
+        "pillar": "founder-building-in-public",
+        "format": "quote-card",
+        "funnelStage": "proof",
+        "cta": "read-thesis"
+      },
+      "x": {
+        "content": "[REPLACE] Founder quote on why backtestable intelligence matters.\n\n#BuildInPublic #QuantGist"
+      },
+      "facebook": {
+        "content": "[REPLACE] Expanded founder narrative for professional audience."
+      }
+    }
+  ]
+}

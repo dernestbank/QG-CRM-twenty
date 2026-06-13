@@ -1,0 +1,77 @@
+{
+  "description": "Live demo event promotion — June 2026. Draft for biweekly review.",
+  "posts": [
+    {
+      "id": "ev-jun-save-date",
+      "scheduledAt": "2026-06-10T17:00:00.000Z",
+      "tags": ["event", "save-the-date"],
+      "matrix": {
+        "rowId": "ev-01",
+        "audience": "retail-traders",
+        "goal": "event-promotion",
+        "pillar": "market-intelligence",
+        "format": "event-banner",
+        "funnelStage": "awareness",
+        "cta": "register"
+      },
+      "media": {
+        "canvaTemplate": "event-banner",
+        "canvaDesignId": "DAHMV5NtkIM"
+      },
+      "x": {
+        "content": "📅 LIVE DEMO — June 24, 2026 @ 5:00 PM UTC\n\nQuantGist Market Signals: from CPI headline → structured context → backtest-ready tags.\n\nFree registration → quantgist.com/events/live-demo-jun-2026?utm_source=x&utm_campaign=jun-2026-event-promotion\n\n#QuantGist #Webinar"
+      },
+      "facebook": {
+        "content": "You're invited: QuantGist Live Demo — June 24, 2026 at 5:00 PM UTC.\n\nWe'll walk through how macro events become structured trading intelligence (not financial advice).\n\nRegister free → quantgist.com/events/live-demo-jun-2026?utm_source=facebook&utm_campaign=jun-2026-event-promotion"
+      }
+    },
+    {
+      "id": "ev-jun-agenda",
+      "scheduledAt": "2026-06-17T16:00:00.000Z",
+      "tags": ["event", "agenda"],
+      "matrix": {
+        "rowId": "ev-02",
+        "audience": "algo-quants",
+        "goal": "event-promotion",
+        "pillar": "product-education",
+        "format": "market-news-alert",
+        "funnelStage": "education",
+        "cta": "save-date"
+      },
+      "media": {
+        "canvaTemplate": "market-news-alert",
+        "canvaDesignId": "DAHMVxCnv0s"
+      },
+      "x": {
+        "content": "Live demo agenda (Jun 24):\n\n• Classify a macro surprise\n• Map NQ reaction window\n• Export context to your research stack\n\nQ&A with the QuantGist team.\n\nRegister → quantgist.com/events/live-demo-jun-2026?utm_source=x&utm_campaign=jun-2026-event-promotion"
+      },
+      "facebook": {
+        "content": "What we'll cover in the June 24 live demo:\n\n1. Macro event taxonomy\n2. Reaction window analysis\n3. API export for quants\n\nBring your questions — educational session only.\n\nSave your seat → quantgist.com/events/live-demo-jun-2026?utm_source=facebook&utm_campaign=jun-2026-event-promotion"
+      }
+    },
+    {
+      "id": "ev-jun-last-chance",
+      "scheduledAt": "2026-06-23T15:00:00.000Z",
+      "tags": ["event", "conversion"],
+      "matrix": {
+        "rowId": "ev-03",
+        "audience": "retail-traders",
+        "goal": "event-promotion",
+        "pillar": "community-content",
+        "format": "event-banner",
+        "funnelStage": "conversion",
+        "cta": "register-now"
+      },
+      "media": {
+        "canvaTemplate": "event-banner",
+        "canvaDesignId": "DAHMV5NtkIM"
+      },
+      "x": {
+        "content": "Tomorrow: QuantGist Live Demo @ 5 PM UTC.\n\nLast chance to register — we'll demo Market Signals on a real macro calendar week.\n\n→ quantgist.com/events/live-demo-jun-2026?utm_source=x&utm_campaign=jun-2026-event-promotion"
+      },
+      "facebook": {
+        "content": "24 hours until the QuantGist live demo.\n\nJoin traders and developers for a practical walkthrough of macro → context → research workflow.\n\nRegister now → quantgist.com/events/live-demo-jun-2026?utm_source=facebook&utm_campaign=jun-2026-event-promotion"
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "id": "TEMPLATE-product-launch",
+  "name": "[TEMPLATE] Product Launch Campaign",
+  "campaignType": "product-launch",
+  "status": "draft",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "excludedReason": "LinkedIn Page blocked until CMA approved.",
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Traders and developers turn market news, macro events, and trading data into backtestable trading intelligence.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "algo-quants",
+      "secondary": "retail-traders"
+    },
+    "goal": "product-launch",
+    "positioning": "Replace with one-line launch positioning for [FEATURE_NAME]",
+    "message": "Replace with core launch message — what shipped and why it matters.",
+    "contentPillars": [
+      "market-intelligence",
+      "product-education",
+      "founder-building-in-public",
+      "case-studies"
+    ],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "proof", "conversion", "retention"]
+  },
+  "kpis": {
+    "primary": "feature-page-visits",
+    "targets": {
+      "impressions": 50000,
+      "linkClicks": 500,
+      "conversions": 50
+    },
+    "measurement": "Postiz analytics + Twenty CRM leads tagged with campaign id",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "pl-01",
+      "audience": "retail-traders",
+      "goal": "product-launch",
+      "pillar": "market-intelligence",
+      "format": "market-news-alert",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "awareness",
+      "cta": "learn-more",
+      "canvaTemplate": "market-news-alert",
+      "scheduledDay": "monday"
+    },
+    {
+      "rowId": "pl-02",
+      "audience": "algo-quants",
+      "goal": "product-launch",
+      "pillar": "product-education",
+      "format": "api-feature-card",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "education",
+      "cta": "explore-feature",
+      "canvaTemplate": "api-feature-card",
+      "scheduledDay": "tuesday"
+    },
+    {
+      "rowId": "pl-03",
+      "audience": "fintech-builders",
+      "goal": "product-launch",
+      "pillar": "founder-building-in-public",
+      "format": "quote-card",
+      "platforms": ["x"],
+      "funnelStage": "proof",
+      "cta": "follow-roadmap",
+      "canvaTemplate": "quote-card",
+      "scheduledDay": "wednesday"
+    },
+    {
+      "rowId": "pl-04",
+      "audience": "retail-traders",
+      "goal": "product-launch",
+      "pillar": "case-studies",
+      "format": "case-study",
+      "platforms": ["facebook"],
+      "funnelStage": "proof",
+      "cta": "view-results",
+      "canvaTemplate": "case-study",
+      "scheduledDay": "thursday"
+    },
+    {
+      "rowId": "pl-05",
+      "audience": "algo-quants",
+      "goal": "product-launch",
+      "pillar": "product-education",
+      "format": "chart-insight",
+      "platforms": ["x"],
+      "funnelStage": "conversion",
+      "cta": "start-trial",
+      "canvaTemplate": "chart-insight",
+      "scheduledDay": "thursday"
+    },
+    {
+      "rowId": "pl-06",
+      "audience": "retail-traders",
+      "goal": "community",
+      "pillar": "community-content",
+      "format": "poll",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "retention",
+      "cta": "reply-feedback",
+      "canvaTemplate": null,
+      "scheduledDay": "friday"
+    }
+  ],
+  "canva": {
+    "templates": [
+      "market-news-alert",
+      "api-feature-card",
+      "quote-card",
+      "case-study",
+      "chart-insight"
+    ],
+    "workflowDoc": "packages/twenty-docker/quantgist/CANVA_MULTIMEDIA_WORKFLOW.md"
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "designer": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "Plan — finalize launch matrix and feature positioning",
+    "tuesday": "Copy + Canva assets for pl-01, pl-02",
+    "wednesday": "Founder clip or quote card (pl-03)",
+    "thursday": "Schedule Postiz drafts; conversion post (pl-05)",
+    "friday": "KPI baseline + community poll (pl-06)"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday — user reviews Postiz draft queue"
+}

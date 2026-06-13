@@ -1,0 +1,129 @@
+{
+  "id": "TEMPLATE-brand-awareness",
+  "name": "[TEMPLATE] Brand Awareness Campaign",
+  "campaignType": "brand-awareness",
+  "status": "draft",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Traders and developers turn market news, macro events, and trading data into backtestable trading intelligence.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "retail-traders",
+      "secondary": "prop-firm-traders"
+    },
+    "goal": "brand-awareness",
+    "positioning": "Replace — why QuantGist matters in the market intelligence space",
+    "message": "Replace — memorable brand message for this awareness push",
+    "contentPillars": [
+      "market-intelligence",
+      "trading-education",
+      "founder-building-in-public",
+      "community-content"
+    ],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "proof", "retention"]
+  },
+  "kpis": {
+    "primary": "impressions",
+    "targets": {
+      "impressions": 100000,
+      "profileVisits": 2000,
+      "followerGrowth": 200
+    },
+    "measurement": "Postiz platform analytics; follower delta vs campaign start",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "ba-01",
+      "audience": "retail-traders",
+      "goal": "brand-awareness",
+      "pillar": "market-intelligence",
+      "format": "chart-insight",
+      "platforms": ["x"],
+      "funnelStage": "awareness",
+      "cta": "follow",
+      "canvaTemplate": "chart-insight",
+      "scheduledDay": "monday"
+    },
+    {
+      "rowId": "ba-02",
+      "audience": "prop-firm-traders",
+      "goal": "brand-awareness",
+      "pillar": "trading-education",
+      "format": "carousel",
+      "platforms": ["facebook"],
+      "funnelStage": "education",
+      "cta": "save-post",
+      "canvaTemplate": "carousel",
+      "scheduledDay": "tuesday"
+    },
+    {
+      "rowId": "ba-03",
+      "audience": "investors-partners",
+      "goal": "brand-awareness",
+      "pillar": "founder-building-in-public",
+      "format": "quote-card",
+      "platforms": ["x", "facebook"],
+      "funnelStage": "proof",
+      "cta": "read-thesis",
+      "canvaTemplate": "quote-card",
+      "scheduledDay": "wednesday"
+    },
+    {
+      "rowId": "ba-04",
+      "audience": "fintech-builders",
+      "goal": "brand-awareness",
+      "pillar": "product-education",
+      "format": "thread",
+      "platforms": ["x"],
+      "funnelStage": "education",
+      "cta": "share",
+      "canvaTemplate": null,
+      "scheduledDay": "thursday"
+    },
+    {
+      "rowId": "ba-05",
+      "audience": "retail-traders",
+      "goal": "brand-awareness",
+      "pillar": "community-content",
+      "format": "poll",
+      "platforms": ["x"],
+      "funnelStage": "retention",
+      "cta": "join-discord",
+      "canvaTemplate": null,
+      "scheduledDay": "friday"
+    }
+  ],
+  "canva": {
+    "templates": ["chart-insight", "carousel", "quote-card"],
+    "workflowDoc": "packages/twenty-docker/quantgist/CANVA_MULTIMEDIA_WORKFLOW.md"
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "designer": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "Plan — awareness angle and hero chart insight",
+    "tuesday": "Education carousel + copy",
+    "wednesday": "Founder quote card",
+    "thursday": "Schedule drafts; X thread",
+    "friday": "Impressions KPI + community poll"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday"
+}

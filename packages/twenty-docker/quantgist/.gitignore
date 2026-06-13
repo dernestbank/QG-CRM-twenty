@@ -1,0 +1,5 @@
+# Never commit secrets
+canva-quantgist.env
+*.env.local
+postiz-openai-api-key.txt
+postiz-openclaw-gateway-token.txt

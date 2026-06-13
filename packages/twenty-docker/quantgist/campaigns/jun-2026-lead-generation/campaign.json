@@ -1,0 +1,92 @@
+{
+  "id": "jun-2026-lead-generation",
+  "name": "QuantGist API Lead Gen — June 2026",
+  "campaignType": "lead-generation",
+  "status": "draft",
+  "owner": "QG_MARKETING",
+  "operators": ["QG_CAMPAIGN_OPERATOR", "QG_SOCIAL_MEDIA_MANAGER"],
+  "platforms": ["x", "facebook"],
+  "excludedPlatforms": ["linkedin-page"],
+  "integrationIds": {
+    "x": "cmq55s5iy0001qttunmxabaf5",
+    "facebook": "cmq4clbth0001qkqsznluxtud"
+  },
+  "brand": {
+    "positioning": "Traders and developers turn market news, macro events, and trading data into backtestable trading intelligence.",
+    "voice": "data-driven, authoritative, premium fintech",
+    "complianceRef": "QG_COMPLIANCE_RULES"
+  },
+  "strategy": {
+    "audience": {
+      "primary": "algo-quants",
+      "secondary": "fintech-builders"
+    },
+    "goal": "lead-generation",
+    "positioning": "QuantGist API brings structured macro context into your stack.",
+    "message": "Ship faster with market intelligence endpoints — not scraped headlines.",
+    "contentPillars": ["product-education", "market-intelligence", "case-studies"],
+    "channels": ["x", "facebook"],
+    "funnelMapping": ["awareness", "education", "conversion"]
+  },
+  "kpis": {
+    "primary": "signups",
+    "targets": {
+      "impressions": 40000,
+      "linkClicks": 400,
+      "conversions": 40
+    },
+    "measurement": "UTM-tagged signup URLs + Twenty CRM",
+    "reviewCadence": "biweekly"
+  },
+  "contentMatrix": [
+    {
+      "rowId": "lg-01",
+      "audience": "algo-quants",
+      "goal": "lead-generation",
+      "pillar": "product-education",
+      "format": "api-feature-card",
+      "funnelStage": "awareness",
+      "cta": "learn-more",
+      "canvaTemplate": "api-feature-card"
+    },
+    {
+      "rowId": "lg-02",
+      "audience": "fintech-builders",
+      "goal": "lead-generation",
+      "pillar": "product-education",
+      "format": "lead-gen-checklist",
+      "funnelStage": "education",
+      "cta": "download",
+      "canvaTemplate": "lead-gen-checklist"
+    },
+    {
+      "rowId": "lg-03",
+      "audience": "algo-quants",
+      "goal": "lead-generation",
+      "pillar": "case-studies",
+      "format": "case-study",
+      "funnelStage": "conversion",
+      "cta": "sign-up",
+      "canvaTemplate": "case-study"
+    }
+  ],
+  "canva": {
+    "templates": ["api-feature-card", "lead-gen-checklist", "case-study"]
+  },
+  "roles": {
+    "strategist": "QG_MARKETING",
+    "contentWriter": "QG_CONTENT_CREATOR",
+    "smm": "QG_SOCIAL_MEDIA_MANAGER",
+    "campaignOperator": "QG_CAMPAIGN_OPERATOR",
+    "analyst": "QG_ENGAGEMENT_ANALYST"
+  },
+  "weeklyPlan": {
+    "monday": "API feature card — awareness",
+    "tuesday": "UTM link audit + copy polish",
+    "wednesday": "Checklist promo — education",
+    "thursday": "Schedule drafts; review signup funnel",
+    "friday": "Case study — conversion CTA"
+  },
+  "postizUiReviewUrl": "https://smm.quantgist.com/launches",
+  "biweeklyReviewCadence": "Every other Monday"
+}

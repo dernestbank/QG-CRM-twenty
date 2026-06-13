@@ -1,0 +1,69 @@
+{
+  "description": "Market Signals launch — each post maps to contentMatrix row. Schedule as draft for biweekly Postiz review.",
+  "posts": [
+    {
+      "id": "post-1-market-pulse",
+      "scheduledAt": "2026-06-16T16:00:00.000Z",
+      "tags": ["market-pulse", "launch"],
+      "matrix": {
+        "rowId": "pl-01",
+        "audience": "retail-traders",
+        "goal": "product-launch",
+        "pillar": "market-intelligence",
+        "format": "market-news-alert",
+        "funnelStage": "awareness",
+        "cta": "learn-more"
+      },
+      "media": {
+        "canvaTemplate": "market-news-alert",
+        "canvaDesignId": "DAHMVxCnv0s"
+      },
+      "x": {
+        "content": "Markets move fast. QuantGist Market Signals turns macro news + sentiment into actionable context — not noise.\n\nSee what changed today → quantgist.com\n\n#QuantGist #MarketPulse #FinTech"
+      },
+      "facebook": {
+        "content": "Introducing QuantGist Market Signals — AI-powered context on macro news, sentiment, and market-moving events.\n\nBuilt for traders and analysts who want clarity, not clickbait.\n\nExplore at quantgist.com\n\n#QuantGist #MarketPulse"
+      }
+    },
+    {
+      "id": "post-2-how-it-works",
+      "scheduledAt": "2026-06-18T16:00:00.000Z",
+      "tags": ["education", "product"],
+      "matrix": {
+        "rowId": "pl-02",
+        "audience": "algo-quants",
+        "goal": "product-launch",
+        "pillar": "product-education",
+        "format": "thread",
+        "funnelStage": "education",
+        "cta": "explore-feature"
+      },
+      "x": {
+        "content": "How QuantGist Market Signals works:\n\n1. Ingest macro + market news\n2. Score sentiment & relevance\n3. Surface what matters for your watchlist\n\nNo financial advice. Just better context.\n\n#QuantGist #AlgoTrading"
+      },
+      "facebook": {
+        "content": "How QuantGist Market Signals works:\n\n• Aggregates macro and market news\n• Scores sentiment and relevance\n• Highlights events that matter for your watchlist\n\nWe provide context — not financial advice.\n\nLearn more at quantgist.com"
+      }
+    },
+    {
+      "id": "post-3-build-in-public",
+      "scheduledAt": "2026-06-20T16:00:00.000Z",
+      "tags": ["build-in-public", "community"],
+      "matrix": {
+        "rowId": "pl-06",
+        "audience": "retail-traders",
+        "goal": "community",
+        "pillar": "community-content",
+        "format": "poll",
+        "funnelStage": "retention",
+        "cta": "reply-feedback"
+      },
+      "x": {
+        "content": "Build in public update: shipping smarter signal alerts this week.\n\nWhat macro data do you wish showed up in one feed? Reply below — we're listening.\n\n#BuildInPublic #QuantGist"
+      },
+      "facebook": {
+        "content": "Build in public update from the QuantGist team: we're shipping smarter signal alerts this week.\n\nWhat macro data do you wish showed up in one feed? Tell us in the comments — your feedback shapes the roadmap."
+      }
+    }
+  ]
+}

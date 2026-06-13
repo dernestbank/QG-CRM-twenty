@@ -1,0 +1,77 @@
+{
+  "description": "Lead generation — June 2026. UTM on all links. Draft for biweekly review.",
+  "posts": [
+    {
+      "id": "lg-jun-api-card",
+      "scheduledAt": "2026-06-11T16:00:00.000Z",
+      "tags": ["lead-gen", "api"],
+      "matrix": {
+        "rowId": "lg-01",
+        "audience": "algo-quants",
+        "goal": "lead-generation",
+        "pillar": "product-education",
+        "format": "api-feature-card",
+        "funnelStage": "awareness",
+        "cta": "learn-more"
+      },
+      "media": {
+        "canvaTemplate": "api-feature-card",
+        "canvaDesignId": "DAHMV0jj0KA"
+      },
+      "x": {
+        "content": "Your algo stack shouldn't scrape headlines.\n\nQuantGist API: structured macro events, sentiment scores, and reaction windows — REST + webhooks.\n\nDocs → quantgist.com/docs?utm_source=x&utm_campaign=jun-2026-lead-generation\n\n#QuantGist #AlgoTrading #API"
+      },
+      "facebook": {
+        "content": "Developers: integrate macro context without building a news pipeline from scratch.\n\nQuantGist API delivers classified events, relevance scoring, and exportable context for your research stack.\n\nExplore the docs → quantgist.com/docs?utm_source=facebook&utm_campaign=jun-2026-lead-generation"
+      }
+    },
+    {
+      "id": "lg-jun-checklist",
+      "scheduledAt": "2026-06-19T15:00:00.000Z",
+      "tags": ["lead-gen", "checklist"],
+      "matrix": {
+        "rowId": "lg-02",
+        "audience": "fintech-builders",
+        "goal": "lead-generation",
+        "pillar": "product-education",
+        "format": "lead-gen-checklist",
+        "funnelStage": "education",
+        "cta": "download"
+      },
+      "media": {
+        "canvaTemplate": "lead-gen-checklist",
+        "canvaDesignId": "DAHMV1Jp3tI"
+      },
+      "x": {
+        "content": "Checklist: 5 questions before you ship a macro-driven feature\n\n☑ Event taxonomy\n☑ Reaction window\n☑ Historical analogs\n☑ Data licensing\n☑ Backtest harness\n\nGet the full PDF → quantgist.com/resources?utm_source=x&utm_campaign=jun-2026-lead-generation"
+      },
+      "facebook": {
+        "content": "Building a fintech product around macro data? Use this checklist before you commit engineering weeks.\n\nQuantGist published a free guide for teams evaluating market intelligence APIs.\n\nDownload → quantgist.com/resources?utm_source=facebook&utm_campaign=jun-2026-lead-generation"
+      }
+    },
+    {
+      "id": "lg-jun-case-study",
+      "scheduledAt": "2026-06-26T16:00:00.000Z",
+      "tags": ["lead-gen", "conversion"],
+      "matrix": {
+        "rowId": "lg-03",
+        "audience": "algo-quants",
+        "goal": "lead-generation",
+        "pillar": "case-studies",
+        "format": "case-study",
+        "funnelStage": "conversion",
+        "cta": "sign-up"
+      },
+      "media": {
+        "canvaTemplate": "case-study",
+        "canvaDesignId": "DAHMV1xR1eo"
+      },
+      "x": {
+        "content": "Case study: tagging FOMC surprises cut research time ~40% in our internal backtest workflow.\n\nYour mileage varies — that's why we ship tools, not tips.\n\nStart free → quantgist.com/signup?utm_source=x&utm_campaign=jun-2026-lead-generation\n\n#QuantGist #Backtesting"
+      },
+      "facebook": {
+        "content": "How one quant team structured FOMC reaction research using QuantGist context layers.\n\nResults are illustrative — not financial advice. The goal: repeatable research, not hot takes.\n\nCreate your account → quantgist.com/signup?utm_source=facebook&utm_campaign=jun-2026-lead-generation"
+      }
+    }
+  ]
+}

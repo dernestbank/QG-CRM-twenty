@@ -1,0 +1,73 @@
+{
+  "description": "Template posts — replace copy, dates, and matrix rowIds before scheduling.",
+  "posts": [
+    {
+      "id": "pl-01-awareness",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "tags": ["launch", "awareness"],
+      "matrix": {
+        "rowId": "pl-01",
+        "audience": "retail-traders",
+        "goal": "product-launch",
+        "pillar": "market-intelligence",
+        "format": "market-news-alert",
+        "funnelStage": "awareness",
+        "cta": "learn-more"
+      },
+      "media": {
+        "canvaTemplate": "market-news-alert",
+        "canvaDesignId": "PLACEHOLDER"
+      },
+      "x": {
+        "content": "[REPLACE] Launch teaser — macro context hook.\n\nLearn more → quantgist.com\n\n#QuantGist #MarketPulse"
+      },
+      "facebook": {
+        "content": "[REPLACE] Longer launch announcement with market context. Educational framing only — no financial advice.\n\nExplore at quantgist.com\n\n#QuantGist"
+      }
+    },
+    {
+      "id": "pl-02-education",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "tags": ["launch", "education"],
+      "matrix": {
+        "rowId": "pl-02",
+        "audience": "algo-quants",
+        "goal": "product-launch",
+        "pillar": "product-education",
+        "format": "api-feature-card",
+        "funnelStage": "education",
+        "cta": "explore-feature"
+      },
+      "media": {
+        "canvaTemplate": "api-feature-card",
+        "canvaDesignId": "PLACEHOLDER"
+      },
+      "x": {
+        "content": "[REPLACE] How [FEATURE] works:\n\n1. Step one\n2. Step two\n3. Step three\n\nExplore → quantgist.com\n\n#QuantGist #AlgoTrading"
+      },
+      "facebook": {
+        "content": "[REPLACE] Feature walkthrough for developers and quants. Context only — not financial advice."
+      }
+    },
+    {
+      "id": "pl-05-conversion",
+      "scheduledAt": "REPLACE_WITH_ISO_UTC",
+      "tags": ["launch", "conversion"],
+      "matrix": {
+        "rowId": "pl-05",
+        "audience": "algo-quants",
+        "goal": "product-launch",
+        "pillar": "product-education",
+        "format": "chart-insight",
+        "funnelStage": "conversion",
+        "cta": "start-trial"
+      },
+      "x": {
+        "content": "[REPLACE] Chart insight + CTA to try the feature.\n\nStart → quantgist.com/signup\n\n#QuantGist"
+      },
+      "facebook": {
+        "content": "[REPLACE] Proof-oriented post with chart context and signup CTA."
+      }
+    }
+  ]
+}

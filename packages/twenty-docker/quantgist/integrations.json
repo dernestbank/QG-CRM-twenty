@@ -1,0 +1,127 @@
+{
+  "description": "Postiz integration IDs for QuantGist. Source of truth for agents; also mirrored in OpenClaw workspace_QuantGist/ops/POSTIZ.md",
+  "postizApiUrl": "https://smm.quantgist.com/api",
+  "postizUiUrl": "https://smm.quantgist.com/auth",
+  "platforms": {
+    "x": {
+      "integrationId": "cmq55s5iy0001qttunmxabaf5",
+      "profile": "@quantgist",
+      "status": "connected",
+      "campaignDefault": true
+    },
+    "facebook": {
+      "integrationId": "cmq4clbth0001qkqsznluxtud",
+      "profile": "QuantGist",
+      "status": "connected",
+      "campaignDefault": true
+    },
+    "linkedin": {
+      "integrationId": "cmq3r9kon0001pjbed2gzl2v5",
+      "profile": "Ernest Boakye Danquah (personal)",
+      "status": "connected",
+      "campaignDefault": false,
+      "note": "Personal profile only. Skip in company campaigns until LinkedIn Page CMA is approved."
+    },
+    "linkedin-page": {
+      "integrationId": null,
+      "profile": "QuantGist company page",
+      "status": "blocked",
+      "campaignDefault": false,
+      "blocker": "LinkedIn Community Management API not approved on app 252090026"
+    }
+  },
+  "feedbackChannels": {
+    "telegram": {
+      "groupId": "-1003934105316",
+      "marketingTopicId": 5,
+      "agentId": "QG_MARKETING"
+    },
+    "discord": {
+      "marketingChannelId": "1496546435309506662",
+      "socialMediaManagerChannelId": "1496546435309506662",
+      "p0AlertsChannelId": "1496554648885006506"
+    }
+  },
+  "openclawOpsDocs": {
+    "postiz": "~/.openclaw/workspace/workspace_QuantGist/ops/POSTIZ.md",
+    "twentyCrm": "~/.openclaw/workspace/workspace_QuantGist/ops/TWENTY_CRM.md",
+    "postizGatewayEnv": "~/.openclaw/workspace/workspace_QuantGist/ops/postiz-gateway-env.sh"
+  },
+  "campaignFramework": {
+    "strategyDoc": "packages/twenty-docker/quantgist/CAMPAIGN_STRATEGY.md",
+    "contentMatrixDoc": "packages/twenty-docker/quantgist/CONTENT_MATRIX.md",
+    "canvaWorkflowDoc": "packages/twenty-docker/quantgist/CANVA_MULTIMEDIA_WORKFLOW.md",
+    "schemaDoc": "packages/twenty-docker/quantgist/campaigns/SCHEMA.md",
+    "validateScript": "packages/twenty-docker/quantgist/validate-campaign.sh",
+    "templatesDir": "packages/twenty-docker/quantgist/campaigns/templates"
+  },
+  "postizAgentChat": {
+    "status": "openclaw-bridge-live-patched",
+    "runtimeEndpoint": "/copilot/agent",
+    "bridgeDoc": "packages/twenty-docker/quantgist/POSTIZ_OPENCLAW_BRIDGE.md",
+    "openclawAgents": ["QG_MARKETING", "QG_SOCIAL_MEDIA_MANAGER"],
+    "llmAuth": "openai-codex-oauth",
+    "note": "Postiz Agents UI routes to OpenClaw via Gateway /v1/chat/completions. No OPENAI_API_KEY. Bootstrap: bootstrap-postiz-agent-chat.sh --apply",
+    "bootstrapScript": "packages/twenty-docker/quantgist/bootstrap-postiz-agent-chat.sh",
+    "gatewayTokenFile": "~/.openclaw/credentials/postiz-openclaw-gateway-token.txt"
+  },
+  "canva": {
+    "status": "oauth-active-templates-created",
+    "apiBaseUrl": "https://api.canva.com/rest/v1",
+    "authBaseUrl": "https://www.canva.com/api/oauth",
+    "credentialsFile": "~/.openclaw/credentials/canva-quantgist.env",
+    "credentialsDir": "~/.openclaw/credentials",
+    "bootstrapScript": "packages/twenty-docker/quantgist/bootstrap-canva-env.sh",
+    "oauthScript": "packages/twenty-docker/quantgist/canva-oauth-bootstrap.sh",
+    "smokeScript": "packages/twenty-docker/quantgist/smoke-canva.sh",
+    "exportScript": "packages/twenty-docker/quantgist/canva-export-from-template.sh",
+    "templates": {
+      "market-news-alert": {
+        "designId": "DAHMVxCnv0s",
+        "dimensions": "1080x1350",
+        "description": "Macro headline + tag + date (CPI, FOMC, NFP)",
+        "editUrlNote": "Open in Canva to apply QuantGist brand kit and typography"
+      },
+      "chart-insight": {
+        "designId": "DAHMV-97HPA",
+        "dimensions": "1200x675",
+        "description": "Chart image + one-line NQ/macro reaction insight"
+      },
+      "api-feature-card": {
+        "designId": "DAHMV0jj0KA",
+        "dimensions": "1080x1080",
+        "description": "Feature name + description + code snippet area"
+      },
+      "quote-card": {
+        "designId": "DAHMVzXQgPs",
+        "dimensions": "1080x1080",
+        "description": "Founder quote + attribution"
+      },
+      "event-banner": {
+        "designId": "DAHMV5NtkIM",
+        "dimensions": "1920x1080",
+        "description": "Event title, datetime, CTA (webinar/live demo)"
+      },
+      "carousel": {
+        "designId": "DAHMV43brNM",
+        "dimensions": "1080x1080",
+        "description": "Educational step-by-step carousel (multi-page in Canva)"
+      },
+      "case-study": {
+        "designId": "DAHMV1xR1eo",
+        "dimensions": "1080x1080",
+        "description": "Backtest result metric + context"
+      },
+      "brand-awareness": {
+        "designId": "DAHMV6TCqtU",
+        "dimensions": "1080x1080",
+        "description": "Brand awareness series graphic"
+      },
+      "lead-gen-checklist": {
+        "designId": "DAHMV1Jp3tI",
+        "dimensions": "1080x1350",
+        "description": "Lead gen checklist promo"
+      }
+    }
+  }
+}

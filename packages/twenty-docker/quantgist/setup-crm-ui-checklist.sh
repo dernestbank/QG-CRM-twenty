@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Prints the Twenty UI setup checklist for QuantGist CRM data model.
+# Run after workspace signup at https://crm.quantgist.com
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+echo "=== QuantGist Twenty CRM UI Setup Checklist ==="
+echo ""
+echo "Open https://crm.quantgist.com → Settings → Data model"
+echo ""
+echo "1. Person — add marketing fields (see CRM_DATA_MODEL.md):"
+echo "   leadSource, audienceSegment, productInterest, funnelStage,"
+echo "   lastContactedAt, nextAction, utmSource, utmCampaign,"
+echo "   activatedAt, lastApiCallAt"
+echo "   (plus existing: qgUserId, planCustom, subscriptionStatus, signupDate)"
+echo ""
+echo "2. Create custom object: Campaign"
+echo "   Fields: name, campaignType, goal, status, startDate, endDate,"
+echo "   primaryAudience, utmCampaign, postizCampaignId, platforms, canvaDesignId"
+echo "   Relations: M2M Person, 1:M Opportunity"
+echo ""
+echo "3. Opportunity — configure pipeline 'QuantGist Growth Pipeline':"
+echo "   Captured Lead → Segmented → Qualified → Nurturing →"
+echo "   Demo / Trial → Conversion → Retention"
+echo ""
+echo "4. Settings → APIs & Webhooks → Create key"
+echo "   Save to ~/.openclaw/credentials/twenty-quantgist-api-key.txt"
+echo ""
+echo "5. Or automate via metadata API (faster):"
+echo "   cd QuantGist-webapp/backend"
+echo "   TWENTY_API_KEY=\$(cat ~/.openclaw/credentials/twenty-quantgist-api-key.txt)"
+echo "   uv run python ${SCRIPT_DIR}/bootstrap-crm-data-model.py"
+echo ""
+echo "6. Validate:"
+echo "   uv run python scripts/backfill_users_to_crm.py --probe"
+echo ""
+echo "Full spec: ${SCRIPT_DIR}/CRM_DATA_MODEL.md"
